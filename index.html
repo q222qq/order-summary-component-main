@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      position: relative;
+      
+      
+    }
+    .svg1 {
+      position: absolute;
+    }
+    .svg2 {
+      transform: rotate(180deg);
+      position: absolute;
+      top: 260px;
+      z-index: 2;
+    }
+    h1 {
+      z-index: 1;
+      text-align: center;
+      font-size: 29px;
+      font-weight: 900;
+    }
+    .card {
+      width: 400px;
+      height: 600px;
+      background-color: white;
+      position: absolute;
+      top: 45px;
+      left: 520px;
+      z-index: 2;
+      border-radius: 20px;
+   } 
+   .hero{
+    width: 400px;
+    height: 200px;
+    background-image: url('./images/illustration-hero.svg');
+    border-radius: 20px 20px 0 0;
+   }
+   .card h3 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+   }
+   .box {
+    background-color: hsl(225, 100%, 94%);
+    width: 280px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    
+   }
+   button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 44px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+   }
+   .btn--proceed{
+    background-color: hsl(245, 75%, 52%);
+   }
+   .btn--proceed:hover{
+    background-color: hsl(223, 47%, 23%);
+   }
+   .btn--cancel{
+    background-color:hsl(225, 100%, 94%);
+   }
+   .box--contents {
+    margin-right: 50px;
+   }
+  </style>
+</head>
+<body>
+  <div class="inner">
+    <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="#D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+    <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="#e1e9ff" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+
+    <div class="card">
+      <div class="hero"></div>
+      <h1>Order Summary</h1>
+      <h3>You can now listen to millions of songs,<br> audiobooks, and podcasts on any 
+        device<br> anywhere you like!</h3>
+      <div class="box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
+        <div class="box--contents">
+          <h4 style="margin-bottom: 0;">Annual Plan</h4>
+          <p style="margin-top: 0;">$59.99/year</p>
+        </div>
+        <a style="font-weight: 700;" href="#">Change</a>
+      </div>
+      <button class="btn--proceed">Proceed to Payment</button>
+      <button class="btn--cancel">Cancel Order</button>   
+
+    </div>
+
+
+    
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JIHUN RYU</a>.
+  </div>
+</body>
+</html>
